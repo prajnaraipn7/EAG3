@@ -13,9 +13,10 @@ Track progress and reflect on the learning journey over time
 
 🗂️ Repository Structure
 EAG3/
-├── Assignment1/       # Assignment 1
-├── Assignment2/       # Assignment 2
-├── Assignment3/       # Assignment 3
+EAG3/
+├── Session_01/       # Assignment 1
+├── Session_02/       # Assignment 2
+├── Session_03/       # Assignment 3
 └── ...
 
 Each session folder contains the assignment code, notes, and any relevant resources.
