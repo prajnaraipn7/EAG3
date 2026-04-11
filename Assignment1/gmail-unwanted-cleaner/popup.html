@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail Unwanted Cleaner</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Gmail Unwanted Cleaner</h1>
+      <p class="hint">Works on the currently open Gmail tab.</p>
+
+      <label for="keywords">Subject/Sender keywords</label>
+      <textarea
+        id="keywords"
+        placeholder="newsletter, unsubscribe, offer"
+      ></textarea>
+
+      <label for="domains">Sender domains to block</label>
+      <textarea id="domains" placeholder="example.com, spammer.io"></textarea>
+
+      <button id="saveBtn" class="secondary">Save rules</button>
+
+      <section>
+        <div class="button-row">
+          <button id="scanBtn">Scan current view</button>
+          <button id="markOnlyBtn" class="warning">Mark only</button>
+        </div>
+      </section>
+
+      <section class="results">
+        <h2>Scan Results</h2>
+        <div id="status">No scan yet.</div>
+        <ul id="groups"></ul>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

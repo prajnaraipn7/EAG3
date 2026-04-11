@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Unwanted Cleaner",
+  "description": "Group and mark unwanted Gmail emails from Inbox, Promotions, Spam, and other folders.",
+  "version": "1.0.0",
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Gmail Unwanted Cleaner",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
