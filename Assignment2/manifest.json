@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Price Scout",
+  "version": "1.0",
+  "description": "AI-powered price comparison across major e-commerce platforms.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.amazon.in/*", "https://*.flipkart.com/*", "https://*.myntra.com/*", "https://*.nykaa.com/*", "https://generativelanguage.googleapis.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
